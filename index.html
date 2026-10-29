@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Vedant — a smart chatbot by vikas_hindu.">
+  <title>Vedant — Smart Chatbot</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-mark">V</div>
+      <h1>Vedant</h1>
+      <p class="tagline">Your smart chat companion</p>
+      <button id="new-chat" class="new-chat">＋ New chat</button>
+      <div class="side-note">
+        <span class="status-dot"></span>
+        <span id="mode-label">Demo mode</span>
+      </div>
+      <div class="owner">Made by <strong>vikas_hindu</strong></div>
+    </aside>
+
+    <section class="chat-panel" aria-label="Chat with Vedant">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">SMART ASSISTANT</div>
+          <h2>Chat with Vedant</h2>
+        </div>
+        <div class="online"><span class="status-dot"></span> Ready to help</div>
+      </header>
+
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="welcome">
+          <div class="welcome-icon">✦</div>
+          <h3>Namaste! Main Vedant hoon.</h3>
+          <p>Ask a question, explore an idea, or start a conversation.</p>
+          <div class="suggestions">
+            <button class="suggestion">Tell me about yourself</button>
+            <button class="suggestion">Help me get started</button>
+            <button class="suggestion">Hindi mein baat karo</button>
+          </div>
+        </div>
+      </div>
+
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="message-input">Your message</label>
+        <textarea id="message-input" rows="1" maxlength="4000" placeholder="Message Vedant..." required></textarea>
+        <button id="send-button" type="submit" aria-label="Send message">↑</button>
+      </form>
+      <p class="disclaimer">Vedant can make mistakes. Check important information.</p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
