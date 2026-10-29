@@ -47,7 +47,7 @@ If GitHub says the repository already exists, create a different repository name
 ## Configure AI
 In `.env`, set:
 ```env
-OPENAI_API_KEY=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
+OPENAI_API_KEY=your_api_key_here
 OPENAI_MODEL=gpt-4.1-mini
 PORT=3000
 ```
